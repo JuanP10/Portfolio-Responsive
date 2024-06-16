@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Juan</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logoPestaña.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/fotoJuan.jpeg" alt="Juan Pablo Ramirez" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Juan Pablo Ramirez">Juan Pablo <br>Ramirez</h1>
+
+          <p class="title">Desarrollador Full Stack</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">gmail</p>
+
+              <a href="mailto:ramirezgutierrez32@gmail.com" class="contact-link">ramirezgutierrez32@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">linkedin</p>
+
+              <a href="https://www.linkedin.com/in/juan-ramirez10" class="contact-link">juan-ramirez10</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-github"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Github</p>
+
+              <a href="https://github.com/JuanP10" class="contact-link">JuanP10</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Santa Marta, Magdalena, Colombia</address>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="id-card"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Hoja de vida</p>
+              <a href="./assets/archivos/Juan Pablo Ramirez Gutierrez Hoja de Vida.pdf" download="hoja de vida Juan Ramirez.pdf" class="btn-download">Descargar</a>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/juanpablo.ramirez.39501789" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/juanp_ramirezg/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Formación</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portafolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contacto</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Sobre Juan 😉</h2>
+        </header>
+
+        <section class="about-text">
+           <p class="justificado">
+            Soy estudiante universitario de la carrera de Ingeniería en
+            Sistemas con amplia experiencia en desarrollo de
+            aplicaciones web. Tengo habilidades técnicas en el
+            desarrollo de software, incluidos Java, Python,
+            JavaScript, React, C/C++, HTML5, CSS y SQL, así como
+            habilidades blandas como gestión de grupos,
+            comunicación asertiva y liderazgo. Adicionalmente, tengo
+            experiencia en el uso de herramientas como VSCode,
+            NetBeans, Intellj, Mockplus y PostgreSQL. Actualmente
+            resido en Santa Marta, Colombia.
+          </p>
+
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Habilidades</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/chat-communication-conversation-svgrepo-com.svg" alt="comunicación icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Comunicación Asertiva</h4>
+
+                <p class="service-item-text justificado">
+                  Destaco por mi capacidad de comunicarme de manera clara y efectiva, 
+                  asegurando que todos los miembros del equipo comprendan los objetivos y tareas.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/team-svgrepo-com.svg" alt="Equipo icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Trabajo en Equipo</h4>
+
+                <p class="service-item-text justificado">
+                  Disfruto colaborando con otros, aportando y recibiendo ideas para alcanzar metas comunes de manera eficiente y armoniosa.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/group-lock-security-team-person-profile-svgrepo-com.svg" alt="equipo icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Manejo de Grupos</h4>
+
+                <p class="service-item-text justificado">
+                  Soy hábil en la gestión de grupos, coordinando esfuerzos y facilitando la colaboración para asegurar un trabajo conjunto productivo y armonioso.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/leader-speech-svgrepo-com.svg" alt="lider icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Liderazgo</h4>
+
+                <p class="service-item-text justificado">
+                  Tengo experiencia en liderar equipos, inspirando y guiando a los miembros para alcanzar su máximo potencial y cumplir con los objetivos del proyecto.
+                </p>
+              </div>
+
+            </li>
+
+           
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - Lenguajes
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Lenguajes y Tecnologias</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/java-logo-vector-1.svg" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Java</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    He trabajado con Java utilizando el framework Spring Boot, 
+                    incluyendo dependencias de herramientas de desarrollo, web, templates, seguridad, SQL, mensajería, testing y cloud. 
+                    Principalmente uso IntelliJ IDEA, pero también tengo experiencia con Visual Studio Code y NetBeans.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/PythonLogo.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Python</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    He trabajado con Python utilizando librerías como NumPy, Pandas, Matplotlib y Scikit-learn, 
+                    así como manejo de archivos CSV y JSON. También he realizado pruebas unitarias con PyTest y 
+                    he desarrollado aplicaciones web con frameworks como Django y Flask.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/JavaScript-logo.png" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>JavaScript</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    He trabajado con JavaScript utilizando bibliotecas y frameworks como React, jQuery, 
+                    Node.js, y NPM, así como herramientas de diseño como MUI y Bootstrap.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/C_Logo.png" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>C</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    He trabajado con C utilizando la API POSIX para el manejo de archivos, creación, estados y planificación de procesos,
+                    tuberías, memoria compartida, colas de mensajes, señales, hilos, sincronización, mutex y memoria virtual.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Lenguajes</h4>
+
+              <div data-modal-text>
+                <p>
+                  He trabajado con Java utilizando el framework Spring Boot, incluyendo dependencias de
+                  herramientas de desarrollo, web, templates, seguridad, SQL, mensajería, testing y cloud. 
+                  Principalmente uso IntelliJ IDEA, pero también tengo experiencia con Visual Studio Code y NetBeans.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Otras Herramientas</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/postman.svg" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/docker-logo.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/dbeaver.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Git-Icon-1788C.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/Oauth_logo.svg.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/jwt-3.svg" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/swagger-icon-1024x1024-09037v1r.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="formacion" data-page="formación">
+
+        <header>
+          <h2 class="h2 article-title">Formación</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Educacion</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Ingeniería de Sistemas - Unimagdalena</h4>
+
+              <span>2020 — Actual</span>
+
+              <p class="timeline-text">
+                Actalmente me encuentro realizando el 8vo semestre de la carrera de Ingeniería de Sistemas en la universidad del Magdalena... Ya proximo a salir!!! 🤩
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/go?goid=portafolioconstancia&q=1-18548-251483" target="_blank" class="timeline-item-link">
+                <h4 class="h4 timeline-item-title">Diplomado Fundamentos de Programación en Lenguaje Python - UdeA & MinTic 2022</h4>
+              </a>
+              <span>2022</span>
+
+              <p class="timeline-text justificado">
+                En el 2022 realicé junto a Misión TIC 2022 y la Universidad de antioquia el diplomado de Fundamentos de Programación en Lenguaje Python, donde aprendí los conceptos básicos de la programación y la lógica de programación.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/go?goid=portafolioconstancia&q=1-19338-251483" target="_blank" class="timeline-item-link">
+              <h4 class="h4 timeline-item-title">Diplomado Programación Básica en Lenguaje Java - UdeA & MinTic 2022</h4>
+              </a>
+              <span>2022</span>
+
+              <p class="timeline-text justificado">
+                Además, también realicé el diplomado de Programación Básica en Lenguaje Java, donde aprendí los conceptos básicos de la programación orientada a objetos y la lógica de programación.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              <a href="https://certificados.planestic.udistrital.edu.co/cert/7181fd340eb7c16fcbac568bb5e6cd781e63ed7f.pdf" target="_blank" class="timeline-item-link">
+              <h4 class="h4 timeline-item-title">Programación con JavaScript - Udistrital & MinTic 2023</h4>
+              </a>
+
+              <span>2023</span>
+
+              <p class="timeline-text justificado">
+                De igual manera, volví a realizar un diplomado junto a MinTic, esta vez de Programación con JavaScript, donde aprendí los conceptos básicos de la programación con JavaScript y la lógica de programación.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              <a href="https://1drv.ms/b/s!AmP87qQdWrt7h2w4Z2iPI1xzju2o?e=pcokDg" target="_blank" class="timeline-item-link">
+              <h4 class="h4 timeline-item-title">Diseño Web con HTML5 + CSS - Fundación Movistar  </h4>
+              </a>
+
+              <span>2021</span>
+
+              <p class="timeline-text justificado">
+                Junto a la Fundación Movistar realicé el curso de Diseño Web con HTML5 + CSS.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              <a href="https://1drv.ms/b/s!AmP87qQdWrt7hUDULGAArbInB-XS?e=CVPa89" target="_blank" class="timeline-item-link">
+              <h4 class="h4 timeline-item-title">Conceptualización Del Lenguaje De Programación C++  - SENA </h4>
+              <span>2021</span>
+              </a>
+
+              <p class="timeline-text justificado">
+                De manera virtual realicé el curso de Conceptualización Del Lenguaje De Programación C++ con el SENA.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+              <a href="https://1drv.ms/b/s!AmP87qQdWrt7h2w4Z2iPI1xzju2o?e=pcokDg" target="_blank" class="timeline-item-link">
+              <h4 class="h4 timeline-item-title"> Introducción a la ciberseguridad - CISCO & MINTIC </h4>
+              <span>2023</span>
+              </a>
+
+              <p class="timeline-text justificado">
+                De manera virtual realicé el curso de Conceptualización Del Lenguaje De Programación C++ con el SENA.
+              </p>
+
+            </li>
+
+          </ol>
+
+          <div class="info-icon-container">
+            <ion-icon name="information-circle-outline"></ion-icon>
+            <span> Puedes darle clic a cada título para ver los certificados. 😁</span>
+          </div>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">experiencia</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Verificador y revisor en elecciones departamentales del Magdalena 2023</h4>
+
+              <span>2023</span>
+
+              <p class="timeline-text justificado">
+                En esta posición desempeñé un papel crucial como verificador y revisor durante las
+                elecciones departamentales en el Magdalena, supervisando y garantizando la
+                precisión de los datos electorales 
+              </p>
+              <br />
+              <p class="timeline-text justificado">
+                <strong>Verificador:</strong> mi responsabilidad principal fue utilizar un programa especializado
+                para analizar y procesar los formularios E-14, que representaban los datos de cada
+                mesa de votación. Este programa, mediante escaneo, automáticamente detectaba los
+                números y los incorporaba a una base de datos central. Mi función consistía en llevar
+                a cabo una verificación minuciosa para identificar posibles errores en la
+                interpretación automática de los números. Este proceso requería una atención
+                meticulosa, habilidades analíticas y agilidad para garantizar la integridad y
+                recolección eficaz de los datos electorales.
+                
+              </p>
+
+              <br />
+
+              <p class="timeline-text justificado">
+                <strong>Revisor:</strong> Trabajé en colaboración con
+                integrantes de la Registraduría y la Misión de Observación Electoral (MOE) para
+                comparar los datos almacenados en la base con los formularios E-14 físicos
+                recopilados directamente de cada mesa de votación. Esta capa adicional de
+                supervisión aseguró la coherencia y precisión de los datos electorales, contribuyendo
+                a la transparencia y legitimidad del proceso electoral.
+                
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portafolio" data-page="portafolio">
+
+        <header>
+          <h2 class="h2 article-title">Portafolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Microservicios </button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Otros</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>API'S</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Microservicios </button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Otros</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>API'S</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="api's">
+              <a href="https://github.com/JuanP10/API-Eliminatorias-Futbol">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Eliminatorias de Futbol</h3>
+
+                <p class="project-category">Api Rest de eliminatorias de Futbol - Java</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="otros">
+              <a href="https://github.com/JuanP10/APPMovies">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/JPMovies.jpg" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">JPMovies</h3>
+
+                <p class="project-category">Aplicación de lista de peliculas - Kotlin</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="otros">
+              <a href="https://github.com/JuanP10/NBA_BaseDeDatos">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/NBA BD.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">NBA</h3>
+
+                <p class="project-category">Base de datos de una temporada completa de NBA - PostgreSQL</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="api's">
+              <a href="https://github.com/JuanP10/GestorAncianato">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Gestor Ancianato</h3>
+
+                <p class="project-category">Gestor de medicamentos donados para un asilo - Java</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="microservicios">
+              <a href="https://github.com/JuanP10/RentCar">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">RentCar</h3>
+
+                <p class="project-category">Microservicio de renta de autos - Java</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="microservicios">
+              <a href="https://github.com/JuanP10/ProductosLinea">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Productos en Linea</h3>
+
+                <p class="project-category">Microservicio de venta de productos en Linea - Java</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="api's">
+              <a href="https://github.com/JuanP10/Mensajeria_API">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Servicio Mensajeria</h3>
+
+                <p class="project-category">API de Mensajeria - Java</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="otros">
+              <a href="#¿https://github.com/JuanP10/Compilado_TrabajosUNI">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Compilado de Trabajos UNI</h3>
+
+                <p class="project-category justificado">Pequeños proyectos que abarcan disciplinas como Estructuras de Datos, POO , BD, Compiladores, SO y demás. Engloba implementaciones en varios lenguajes como Java, Python, C++, C, HTML5 y CSS, PostgreSQL.</p>
+
+              </a>
+            </li>
+
+    
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contacto" data-page="contacto">
+
+        <header>
+          <h2 class="h2 article-title">Contacto</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63944.12959523112!2d-74.21677768948409!3d11.238891103031454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef4f66ff59a173d%3A0x124b95fc153af9b8!2sSanta%20Marta%2C%20Magdalena!5e0!3m2!1ses-419!2sco!4v1718470317930!5m2!1ses-419!2sco"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Si gustas... enviame un correo 😉 </h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Nombre" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Mensaje" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Enviar Correo</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
