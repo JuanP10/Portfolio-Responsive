@@ -190,9 +190,6 @@ document.addEventListener('DOMContentLoaded', function() {
   form.addEventListener('submit', function(event) {
     event.preventDefault();
 
-    // Muestra un mensaje de carga o realiza alguna acción mientras se envía el correo
-    alert('Enviando mensaje...');
-
     // Obtén los valores del formulario
     const templateParams = {
       fullname: form.querySelector('[name="fullname"]').value,
