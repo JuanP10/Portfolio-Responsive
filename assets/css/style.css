@@ -1491,6 +1491,12 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /* clients */
 
+  .en-proceso {
+    font-style: italic;         
+    color: rgba(0, 0, 0, 0.6); 
+}
+
+
   .clients-list {
     gap: 50px;
     margin: 0 -30px;
